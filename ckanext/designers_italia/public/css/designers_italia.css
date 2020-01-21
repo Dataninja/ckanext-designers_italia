@@ -10,3 +10,28 @@
 .form-group label {
     position: initial;
 }
+
+.toolbar a {
+    display: inline-block;
+}
+
+.toolbar:before {
+    content: none;
+}
+
+.homepage .module-search {
+    background-color: #0066cc;
+}
+
+.homepage .module-search .module-content {
+    background-color: transparent;
+}
+
+.homepage .module-search .tags {
+    background-color: #003366;
+}
+
+.homepage .stats ul li {
+    float: none;
+    width: auto;
+}
