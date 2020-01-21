@@ -107,18 +107,16 @@
                                 </a>
                             </div>
                             <div class="it-right-zone">
+                                {% block designers_italia_social_links %}
                                 {% snippet "designers_italia/snippets/social_links.html" %}
+                                {% endblock %}
                                 <div class="it-search-wrapper">
                                     {% block header_site_search %}
-                                    <form class="site-search simple-input"
-                                        action="{% url_for controller='package', action='search' %}" method="get">
+                                    <form class="site-search simple-input" action="{% url_for controller='package', action='search' %}" method="get">
                                         <div class="field">
-                                            <label
-                                                for="field-sitewide-search">{% block header_site_search_label %}{{ _('Search Datasets') }}{% endblock %}</label>
-                                            <input id="field-sitewide-search" type="text" class="form-control" name="q"
-                                                placeholder="{{ _('Search') }}" />
-                                            <button class="btn-search" type="submit"><i
-                                                    class="fa fa-search"></i></button>
+                                            <label for="field-sitewide-search">{% block header_site_search_label %}{{ _('Search Datasets') }}{% endblock %}</label>
+                                            <input id="field-sitewide-search" type="text" class="form-control" name="q" placeholder="{{ _('Search') }}" />
+                                            <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
                                         </div>
                                     </form>
                                     {% endblock %}
@@ -143,8 +141,7 @@
                             <div class="navbar-collapsable" id="nav10">
                                 <div class="overlay"></div>
                                 <div class="close-div sr-only">
-                                    <button class="btn close-menu" type="button"><span
-                                            class="it-close"></span>close</button>
+                                    <button class="btn close-menu" type="button"><span class="it-close"></span>close</button>
                                 </div>
                                 <div class="menu-wrapper">
                                     <ul class="navbar-nav">
