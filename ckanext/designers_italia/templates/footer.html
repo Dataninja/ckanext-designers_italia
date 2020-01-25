@@ -1,6 +1,8 @@
 <footer class="it-footer">
+    {% block it_footer_main %}
     <div class="it-footer-main">
         <div class="container">
+            {% block it_brand_wrapper %}
             <section>
                 <div class="row clearfix">
                     <div class="col-sm-12">
@@ -16,6 +18,8 @@
                     </div>
                 </div>
             </section>
+            {% endblock %}
+            {% block it_sup_footer %}
             <section>
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-6 pb-2">
@@ -91,6 +95,8 @@
                     </div>
                 </div>
             </section>
+            {% endblock %}
+            {% block it_sub_footer %}
             <section class="py-4 border-white border-top">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 pb-2">
@@ -156,8 +162,11 @@
                     </div>
                 </div>
             </section>
+            {% endblock %}
         </div>
     </div>
+    {% endblock %}
+    {% block it_footer_small %}
     <div class="it-footer-small-prints clearfix">
         <div class="container">
             <h3 class="sr-only">Sezione Link Utili</h3>
@@ -169,4 +178,5 @@
             </ul>
         </div>
     </div>
+    {% endblock %}
 </footer>
