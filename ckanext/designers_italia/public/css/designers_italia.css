@@ -35,3 +35,7 @@
     float: none;
     width: auto;
 }
+
+.lang-select label {
+    color: inherit;
+}
