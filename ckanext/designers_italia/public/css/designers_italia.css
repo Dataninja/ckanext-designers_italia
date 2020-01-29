@@ -39,3 +39,7 @@
 .lang-select label {
     color: inherit;
 }
+
+.next-item.btn-secondary a {
+    color: white !important;
+}
