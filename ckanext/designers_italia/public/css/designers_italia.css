@@ -43,3 +43,7 @@
 .next-item.btn-secondary a {
     color: white !important;
 }
+
+.it-header-slim-wrapper .it-header-slim-wrapper-content a {
+    color: initial;
+}
