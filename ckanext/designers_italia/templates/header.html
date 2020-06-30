@@ -145,6 +145,7 @@
                                     <button class="btn close-menu" type="button"><span class="it-close"></span>close</button>
                                 </div>
                                 <div class="menu-wrapper">
+                                    {% block header_site_navigation_tab_container %}
                                     <ul class="navbar-nav">
                                         {% block header_site_navigation_tabs %}
                                         <li class="nav-item"><a class="nav-link" href="{% url_for controller='package', action='search' %}"><span>{{ _('Datasets') }}</span></a></li>
@@ -153,6 +154,7 @@
                                         <li class="nav-item"><a class="nav-link" href="{{ h.url_for('home.about') }}"><span>{{ _('About') }}</span></a></li>
                                         {% endblock %}
                                     </ul>
+                                    {% endblock %}
                                 </div>
                             </div>
                         </nav>
