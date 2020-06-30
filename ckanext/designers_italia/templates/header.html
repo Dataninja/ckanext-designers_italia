@@ -5,13 +5,13 @@
                 <div class="col-12">
                     <div class="it-header-slim-wrapper-content">
                         {% block header_site_name %}
-                        <a class="d-none d-lg-block navbar-brand" href="{{ h.url_for('home.index') }}">{{ g.site_title }} | {{ g.site_description }}</a>
+                        <a class="d-none d-lg-block navbar-brand" href="{{ h.url_for('home.index') }}">{{ g.site_title }} | {{ _(g.site_description) }}</a>
                         {% endblock %}
                         <div class="nav-mobile">
                             <nav>
                                 <a class="it-opener d-lg-none" data-toggle="collapse" href="#menu-principale"
                                     role="button" aria-expanded="false" aria-controls="menu-principale">
-                                    <span>{{ g.site_title }} | {{ g.site_description }}</span>
+                                    <span>{{ g.site_title }} | {{ _(g.site_description) }}</span>
                                     <svg class="icon">
                                         <use xlink:href="/svg/sprite.svg#it-expand"></use>
                                     </svg>
@@ -103,7 +103,7 @@
                                         title="{{ g.site_title }}" />
                                     <div class="it-brand-text">
                                         <h2 class="no_toc">{{ g.site_title }}</h2>
-                                        <h3 class="no_toc d-none d-md-block">{{ g.site_description }}</h3>
+                                        <h3 class="no_toc d-none d-md-block">{{ _(g.site_description) }}</h3>
                                     </div>
                                 </a>
                             </div>
