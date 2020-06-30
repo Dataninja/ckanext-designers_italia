@@ -5,13 +5,13 @@
                 <div class="col-12">
                     <div class="it-header-slim-wrapper-content">
                         {% block header_site_name %}
-                        <a class="d-none d-lg-block navbar-brand" href="{{ h.url_for('home.index') }}">{{ g.site_title }} | {{ _(g.site_description) }}</a>
+                        <a class="d-none d-lg-block navbar-brand" href="{{ h.url_for('home.index') }}">{{ _(g.site_title) }} | {{ _(g.site_description) }}</a>
                         {% endblock %}
                         <div class="nav-mobile">
                             <nav>
                                 <a class="it-opener d-lg-none" data-toggle="collapse" href="#menu-principale"
                                     role="button" aria-expanded="false" aria-controls="menu-principale">
-                                    <span>{{ g.site_title }} | {{ _(g.site_description) }}</span>
+                                    <span>{{ _(g.site_title) }} | {{ _(g.site_description) }}</span>
                                     <svg class="icon">
                                         <use xlink:href="/svg/sprite.svg#it-expand"></use>
                                     </svg>
@@ -99,10 +99,10 @@
                         <div class="it-header-center-content-wrapper">
                             <div class="it-brand-wrapper">
                                 <a href="{{ h.url_for('home.index') }}">
-                                    <img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="{{ g.site_title }}"
-                                        title="{{ g.site_title }}" />
+                                    <img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="{{ _(g.site_title) }}"
+                                        title="{{ _(g.site_title) }}" />
                                     <div class="it-brand-text">
-                                        <h2 class="no_toc">{{ g.site_title }}</h2>
+                                        <h2 class="no_toc">{{ _(g.site_title) }}</h2>
                                         <h3 class="no_toc d-none d-md-block">{{ _(g.site_description) }}</h3>
                                     </div>
                                 </a>
