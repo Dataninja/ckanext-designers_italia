@@ -66,9 +66,12 @@
                             </nav>
                         </div>
                         <div class="it-header-slim-right-zone">
+                            {% block it_language_top_wrapper %}
                             <div class="it-language-top-wrapper">
                                 {% snippet "snippets/language_selector.html" %}
                             </div>
+                            {% endblock %}
+                            {% block it_access_top_wrapper %}
                             <div class="it-access-top-wrapper">
                                 {% if c.userobj %}
                                 <a title="{{ _('Log out') }}" href="{{ h.url_for('user.logout', id=c.userobj.name) }}">
@@ -85,6 +88,7 @@
                                 {% endif %}
                                 {% endif %}
                             </div>
+                            {% endblock %}
                         </div>
                     </div>
                 </div>
