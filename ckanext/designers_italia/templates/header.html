@@ -101,16 +101,25 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="it-header-center-content-wrapper">
+                            {% block it_brand_wrapper %}
                             <div class="it-brand-wrapper">
                                 <a href="{{ h.url_for('home.index') }}">
-                                    <img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="{{ _(g.site_title) }}"
-                                        title="{{ _(g.site_title) }}" />
+                                    {% block it_brand_image %}
+                                    <img src="{{ h.url_for_static_or_external(g.site_logo) }}" alt="{{ _(g.site_title) }}" title="{{ _(g.site_title) }}" />
+                                    {% endblock %}
+                                    {% block it_brand_text %}
                                     <div class="it-brand-text">
+                                        {% block it_brand_text_title %}
                                         <h2 class="no_toc">{{ _(g.site_title) }}</h2>
+                                        {% endblock %}
+                                        {% block it_brand_text_description %}
                                         <h3 class="no_toc d-none d-md-block">{{ _(g.site_description) }}</h3>
+                                        {% endblock %}
                                     </div>
+                                    {% endblock %}
                                 </a>
                             </div>
+                            {% endblock %}
                             <div class="it-right-zone">
                                 {% block designers_italia_social_links %}
                                 {% snippet "designers_italia/snippets/social_links.html" %}
