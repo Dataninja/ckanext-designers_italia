@@ -147,3 +147,16 @@
         background-color: transparent;
     }
 }
+
+.toolbar {
+    height: auto;
+}
+
+.toolbar .breadcrumb a {
+    color: #505050;
+}
+
+.toolbar .btn-dropdown.active, .toolbar a.active {
+    color: #06c;
+}
+
