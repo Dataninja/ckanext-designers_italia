@@ -1,3 +1,7 @@
+.navbar-brand {
+    height: auto;
+}
+
 .it-brand-wrapper img {
     height: 4rem;
     margin-right: 1rem;
@@ -40,10 +44,106 @@
     color: inherit;
 }
 
+@media (max-width: 767px) {
+    .lang-select label {
+        display: none;
+    }
+}
+
 .next-item.btn-secondary a {
     color: white !important;
 }
 
 .it-header-slim-wrapper .it-header-slim-wrapper-content a {
     color: initial;
+}
+
+.it-header-wrapper .it-nav-wrapper .it-header-navbar-wrapper {
+    position: inherit;
+    left: auto;
+    top: inherit;
+    margin-top: 0;
+    background: #06c;
+}
+
+.it-header-wrapper .it-nav-wrapper .it-header-navbar-wrapper nav {
+    padding: 0 18px;
+}
+
+.navbar .navbar-collapsable {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    z-index: auto;
+    background: 0 0;
+    display: block!important;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.it-header-navbar-wrapper nav .navbar-collapsable .menu-wrapper {
+    background: 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.navbar .navbar-collapsable .menu-wrapper {
+    position: inherit;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    overflow-y: visible;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transition: none;
+    transition: none;
+    background: #06c;
+}
+
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+}
+
+.navbar .navbar-collapsable .menu-wrapper .navbar-nav {
+    padding: 0;
+    overflow: visible;
+    text-align: center;
+    margin-top: 0;
+    align-items: center;
+}
+
+.navbar .navbar-collapsable .navbar-nav li a.nav-link {
+    font-weight: 400;
+    padding: 13px 24px;
+    color: #fff;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+}
+
+@media (max-width: 575px) {
+    .it-header-wrapper .it-nav-wrapper .it-brand-wrapper {
+        padding-left: 0;
+    }
+    .navbar .navbar-collapsable .navbar-nav .nav-item {
+        left: 0;
+        padding: 5px 6px 3px 6px;
+        border-bottom: none;
+    }
+    .navbar .navbar-collapsable .navbar-nav .nav-link {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .navbar .navbar-collapsable .navbar-nav .nav-item:hover {
+        background-color: transparent;
+    }
 }
