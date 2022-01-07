@@ -160,3 +160,15 @@
     color: #06c;
 }
 
+.pagination {
+  justify-content: center;
+}
+
+.pagination > li > a, .pagination > li > span {
+  color: #06c;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #06c;
+    border-color: #06c;
+}
